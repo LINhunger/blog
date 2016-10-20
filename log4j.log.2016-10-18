@@ -1,0 +1,89 @@
+22:03:16,371 DEBUG BasicClientConnectionManager\:158 \: Get connection for route {}->http://sendcloud.sohu.com
+ 22:03:16,434 DEBUG DefaultClientConnectionOperator\:175 \: Connecting to sendcloud.sohu.com:80
+ 22:03:16,511 DEBUG RequestAddCookies\:122 \: CookieSpec selected: best-match
+ 22:03:16,532 DEBUG RequestAuthCache\:75 \: Auth cache not set in the context
+ 22:03:16,533 DEBUG RequestTargetAuthentication\:78 \: Target auth state: UNCHALLENGED
+ 22:03:16,534 DEBUG RequestProxyAuthentication\:87 \: Proxy auth state: UNCHALLENGED
+ 22:03:16,535 DEBUG DefaultHttpClient\:680 \: Attempt 1 to execute request
+ 22:03:16,535 DEBUG DefaultClientConnection\:268 \: Sending request: POST /webapi/mail.send.json HTTP/1.1
+ 22:03:16,536 DEBUG wire\:72 \:  >> "POST /webapi/mail.send.json HTTP/1.1[\r][\n]"
+ 22:03:16,538 DEBUG wire\:72 \:  >> "Content-Length: 617[\r][\n]"
+ 22:03:16,539 DEBUG wire\:72 \:  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+ 22:03:16,539 DEBUG wire\:72 \:  >> "Host: sendcloud.sohu.com[\r][\n]"
+ 22:03:16,539 DEBUG wire\:72 \:  >> "Connection: Keep-Alive[\r][\n]"
+ 22:03:16,539 DEBUG wire\:72 \:  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+ 22:03:16,540 DEBUG wire\:72 \:  >> "[\r][\n]"
+ 22:03:16,540 DEBUG headers\:272 \: >> POST /webapi/mail.send.json HTTP/1.1
+ 22:03:16,541 DEBUG headers\:275 \: >> Content-Length: 617
+ 22:03:16,541 DEBUG headers\:275 \: >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+ 22:03:16,542 DEBUG headers\:275 \: >> Host: sendcloud.sohu.com
+ 22:03:16,543 DEBUG headers\:275 \: >> Connection: Keep-Alive
+ 22:03:16,543 DEBUG headers\:275 \: >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+ 22:03:16,544 DEBUG wire\:86 \:  >> "api_user=LINhunger_test_wSjmFq&api_key=hnSlC9YBquMJccGs&from=service%40sendcloud.im&fromname=&to=466400960%40qq.com&subject=%E6%9D%A5%E8%87%AASendCloud%E7%9A%84%E7%AC%AC%E4%B8%80%E5%B0%81%E9%82%AE%E4%BB%B6%EF%BC%81&html=%E4%BD%A0%E5%A4%AA%E6%A3%92%E4%BA%86%EF%BC%81%E4%BD%A0%E5%B7%B2%E6%88%90%E5%8A%9F%E7%9A%84%E4%BB%8ESendCloud%E5%8F%91%E9%80%81%E4%BA%86%E4%B8%80%E5%B0%81%E6%B5%8B%E8%AF%95%E9%82%AE%E4%BB%B6%EF%BC%8C%E6%8E%A5%E4%B8%8B%E6%9D%A5%E5%BF%AB%E7%99%BB%E5%BD%95%E5%89%8D%E5%8F%B0%E5%8E%BB%E5%AE%8C%E5%96%84%E8%B4%A6%E6%88%B7%E4%BF%A1%E6%81%AF%E5%90%A7%EF%BC%81%E6%9E%97%E7%AB%B9%E7%AB%BF&resp_email_id=true"
+ 22:03:16,637 DEBUG wire\:72 \:  << "HTTP/1.1 200 OK[\r][\n]"
+ 22:03:16,640 DEBUG wire\:72 \:  << "Server: nginx/1.6.3[\r][\n]"
+ 22:03:16,641 DEBUG wire\:72 \:  << "Date: Tue, 18 Oct 2016 14:03:17 GMT[\r][\n]"
+ 22:03:16,641 DEBUG wire\:72 \:  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+ 22:03:16,642 DEBUG wire\:72 \:  << "Transfer-Encoding: chunked[\r][\n]"
+ 22:03:16,642 DEBUG wire\:72 \:  << "Access-Control-Allow-Origin: *[\r][\n]"
+ 22:03:16,642 DEBUG wire\:72 \:  << "[\r][\n]"
+ 22:03:16,643 DEBUG DefaultClientConnection\:253 \: Receiving response: HTTP/1.1 200 OK
+ 22:03:16,644 DEBUG headers\:256 \: << HTTP/1.1 200 OK
+ 22:03:16,644 DEBUG headers\:259 \: << Server: nginx/1.6.3
+ 22:03:16,644 DEBUG headers\:259 \: << Date: Tue, 18 Oct 2016 14:03:17 GMT
+ 22:03:16,644 DEBUG headers\:259 \: << Content-Type: application/json;charset=UTF-8
+ 22:03:16,644 DEBUG headers\:259 \: << Transfer-Encoding: chunked
+ 22:03:16,645 DEBUG headers\:259 \: << Access-Control-Allow-Origin: *
+ 22:03:16,650 DEBUG DefaultHttpClient\:509 \: Connection can be kept alive indefinitely
+ 22:03:16,664 DEBUG wire\:72 \:  << "71[\r][\n]"
+ 22:03:16,665 DEBUG wire\:86 \:  << "{"message":"success","email_id_list":["1476799397365_57486_23964_3041.sc-10_9_13_213-inbound0$466400960@qq.com"]}"
+ 22:03:16,665 DEBUG wire\:72 \:  << "[\r][\n]"
+ 22:03:16,665 DEBUG wire\:72 \:  << "0[\r][\n]"
+ 22:03:16,665 DEBUG wire\:72 \:  << "[\r][\n]"
+ 22:03:16,666 DEBUG BasicClientConnectionManager\:196 \: Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@52a86356
+ 22:03:16,666 DEBUG BasicClientConnectionManager\:221 \: Connection can be kept alive indefinitely
+ 22:12:12,299 DEBUG BasicClientConnectionManager\:158 \: Get connection for route {}->http://sendcloud.sohu.com
+ 22:12:12,357 DEBUG DefaultClientConnectionOperator\:175 \: Connecting to sendcloud.sohu.com:80
+ 22:12:12,424 DEBUG RequestAddCookies\:122 \: CookieSpec selected: best-match
+ 22:12:12,437 DEBUG RequestAuthCache\:75 \: Auth cache not set in the context
+ 22:12:12,437 DEBUG RequestTargetAuthentication\:78 \: Target auth state: UNCHALLENGED
+ 22:12:12,438 DEBUG RequestProxyAuthentication\:87 \: Proxy auth state: UNCHALLENGED
+ 22:12:12,439 DEBUG DefaultHttpClient\:680 \: Attempt 1 to execute request
+ 22:12:12,439 DEBUG DefaultClientConnection\:268 \: Sending request: POST /webapi/mail.send.json HTTP/1.1
+ 22:12:12,440 DEBUG wire\:72 \:  >> "POST /webapi/mail.send.json HTTP/1.1[\r][\n]"
+ 22:12:12,442 DEBUG wire\:72 \:  >> "Content-Length: 806[\r][\n]"
+ 22:12:12,442 DEBUG wire\:72 \:  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+ 22:12:12,443 DEBUG wire\:72 \:  >> "Host: sendcloud.sohu.com[\r][\n]"
+ 22:12:12,443 DEBUG wire\:72 \:  >> "Connection: Keep-Alive[\r][\n]"
+ 22:12:12,443 DEBUG wire\:72 \:  >> "User-Agent: Apache-HttpClient/4.3.1 (java 1.5)[\r][\n]"
+ 22:12:12,443 DEBUG wire\:72 \:  >> "[\r][\n]"
+ 22:12:12,444 DEBUG headers\:272 \: >> POST /webapi/mail.send.json HTTP/1.1
+ 22:12:12,445 DEBUG headers\:275 \: >> Content-Length: 806
+ 22:12:12,445 DEBUG headers\:275 \: >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+ 22:12:12,446 DEBUG headers\:275 \: >> Host: sendcloud.sohu.com
+ 22:12:12,446 DEBUG headers\:275 \: >> Connection: Keep-Alive
+ 22:12:12,446 DEBUG headers\:275 \: >> User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+ 22:12:12,447 DEBUG wire\:86 \:  >> "api_user=LINhunger_test_wSjmFq&api_key=hnSlC9YBquMJccGs&from=service%40sendcloud.im&fromname=&to=466400960%40qq.com&subject=%E6%9D%A5%E8%87%AA%E5%A5%BD%E8%83%96%E5%8F%8B%E6%9E%97%E5%AF%92%E6%88%88%E7%9A%84%E9%82%80%E8%AF%B7%EF%BC%81&html=%E7%9C%9F%E7%9A%84%E5%A4%AA%E6%A3%92%E4%BA%86%EF%BC%81%E8%83%BD%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A5%BD%E6%9C%8B%E5%8F%8B%E6%AC%A3%E8%B5%8F%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BD%9C%E5%93%81%EF%BC%8C%E5%B0%8F%E6%88%88%E5%90%8C%E5%AD%A6%E7%9C%9F%E7%9A%84%E6%84%9F%E5%88%B0%E5%BE%88%E5%BC%80%E5%BF%83%EF%BC%8C%E6%8E%A5%E4%B8%8B%E6%9D%A5%E5%BF%AB%E7%99%BB%E5%BD%95%E5%89%8D%E5%8F%B0%E5%8E%BB%E5%AE%8C%E5%96%84%E8%B4%A6%E6%88%B7%E4%BF%A1%E6%81%AF%EF%BC%81%E6%9D%A5%E7%9C%8B%E6%88%91%E7%9A%84%E6%88%90%E6%9E%9C%E5%90%A7%EF%BC%8C%E5%93%87%E5%93%88%E5%93%88&resp_email_id=true"
+ 22:12:12,536 DEBUG wire\:72 \:  << "HTTP/1.1 200 OK[\r][\n]"
+ 22:12:12,540 DEBUG wire\:72 \:  << "Server: nginx/1.6.3[\r][\n]"
+ 22:12:12,540 DEBUG wire\:72 \:  << "Date: Tue, 18 Oct 2016 14:12:13 GMT[\r][\n]"
+ 22:12:12,540 DEBUG wire\:72 \:  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+ 22:12:12,541 DEBUG wire\:72 \:  << "Transfer-Encoding: chunked[\r][\n]"
+ 22:12:12,541 DEBUG wire\:72 \:  << "Access-Control-Allow-Origin: *[\r][\n]"
+ 22:12:12,542 DEBUG wire\:72 \:  << "[\r][\n]"
+ 22:12:12,543 DEBUG DefaultClientConnection\:253 \: Receiving response: HTTP/1.1 200 OK
+ 22:12:12,544 DEBUG headers\:256 \: << HTTP/1.1 200 OK
+ 22:12:12,544 DEBUG headers\:259 \: << Server: nginx/1.6.3
+ 22:12:12,544 DEBUG headers\:259 \: << Date: Tue, 18 Oct 2016 14:12:13 GMT
+ 22:12:12,544 DEBUG headers\:259 \: << Content-Type: application/json;charset=UTF-8
+ 22:12:12,545 DEBUG headers\:259 \: << Transfer-Encoding: chunked
+ 22:12:12,545 DEBUG headers\:259 \: << Access-Control-Allow-Origin: *
+ 22:12:12,550 DEBUG DefaultHttpClient\:509 \: Connection can be kept alive indefinitely
+ 22:12:12,566 DEBUG wire\:72 \:  << "71[\r][\n]"
+ 22:12:12,566 DEBUG wire\:86 \:  << "{"message":"success","email_id_list":["1476799933272_57486_23961_3531.sc-10_9_13_213-inbound0$466400960@qq.com"]}"
+ 22:12:12,567 DEBUG wire\:72 \:  << "[\r][\n]"
+ 22:12:12,567 DEBUG wire\:72 \:  << "0[\r][\n]"
+ 22:12:12,567 DEBUG wire\:72 \:  << "[\r][\n]"
+ 22:12:12,567 DEBUG BasicClientConnectionManager\:196 \: Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@52a86356
+ 22:12:12,568 DEBUG BasicClientConnectionManager\:221 \: Connection can be kept alive indefinitely
+ 
