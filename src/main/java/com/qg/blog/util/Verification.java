@@ -68,12 +68,10 @@ public class Verification extends HttpServlet {
         // 输出图像
         g.dispose();
         ImageIO.write(img, "jpeg", response.getOutputStream());
-
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
 
     }
 

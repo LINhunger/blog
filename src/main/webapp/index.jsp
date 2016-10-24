@@ -19,13 +19,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">小戈杂货店</a>
+            <a class="navbar-brand" href="#">小戈博客园</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">首页</a></li>
-                <li><a href="/ggblog/user/form">点击注册</a></li>
-                <li><a href="#contact">我的购物车</a></li>
+                <li><a href="/emailSend.html">点击注册</a></li>
+                <li><a href="/login.html">登录</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多信息 <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">

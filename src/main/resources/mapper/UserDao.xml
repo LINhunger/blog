@@ -6,10 +6,16 @@
     <!--目的：为Dao接口方法提供SQL语句-->
 
 
+    <!--插入User对象-->
     <insert id="insertUser">
-        INSERT ignore into user(name,email,password,role,
+        INSERT  into user(name,email,password,role,
         introduction,invcode)
         VALUES (#{user.name},#{user.email},#{user.password},#{user.role},
         #{user.introduction},#{invcode})
     </insert>
+    <!--根据email查找用户对象-->
+    <select id="seclectUser" resultType="User">
+        SELECT * FROM user WHERE  email = #{emailOrName} OR Name = #{emailOrName}
+    </select>
+
 </mapper>

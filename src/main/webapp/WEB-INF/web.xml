@@ -22,7 +22,25 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+    <!--配置验证码-->
+    <servlet>
+        <servlet-name>verification</servlet-name>
+        <servlet-class>com.qg.blog.util.Verification</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>verification</servlet-name>
+        <url-pattern>/verification</url-pattern>
+    </servlet-mapping>
 
+    <!-- 设置错误页面 -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/resources/errorpage/404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/resources/errorpage/500.jsp</location>
+    </error-page>
 
 
 

@@ -9,7 +9,19 @@ import org.apache.ibatis.annotations.Param;
 public interface UserDao {
 
         /**
-         * 添加用户
-        * */
+         * 查找用户
+         * @param user
+         * @param invcode
+         * @return
+         */
         int insertUser(@Param("user") User user,@Param("invcode") String invcode);
+
+        /**
+         * 根据邮箱查找用户
+         * @param emailOrName 邮箱或用户名
+         * @return  用户对象
+         */
+        User seclectUser(@Param("emailOrName")String emailOrName);
+
+
 }

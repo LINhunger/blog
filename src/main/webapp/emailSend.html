@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>邮箱提交界面</title>
+</head>
+<body>
+<!-- Fixed navbar -->
+<form action="/ggblog/user/verification" method="post">
+    邮箱：<input name="email"  value=""  id="email"/><br/>
+    验证码：<input type="text" name="valcode" />
+    <img src="/verification" id="myimg" onclick="change();" style= "cursor: pointer;"/><br/>
+    <input type="submit" value="验证邮箱"/>
+</form>
+
+
+<!--切换验证码-->
+<script type="text/javascript">
+    function change()
+    {
+        //切换验证码
+        document.getElementById("myimg").src= "/verification?"+new Date().getTime();
+    }
+</script>
+
+</body>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>

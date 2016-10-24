@@ -24,6 +24,7 @@ public class SendCommonPostMail {
         final String url = "http://sendcloud.sohu.com/webapi/mail.send.json";
         final String apiUser = "LINhunger_test_wSjmFq";
         final String apiKey = "hnSlC9YBquMJccGs";
+        final String ciphertext = Encryption.getMD5(email);
 
         HttpClient httpclient = new DefaultHttpClient();
         HttpPost httpost = new HttpPost(url);
@@ -72,7 +73,7 @@ public class SendCommonPostMail {
                         "\t\t\t\t\t\t\t\t\t\t\t\t<p style=\"text-indent:2em\">真的太棒了！能让自己的好朋友欣赏自己的作品，小戈同学真的感到很开心<br />\n" +
                         "\t\t\t\t\t\t\t\t\t\t\t\t接下来快登录前台去完善账户信息！来看我的成果吧，哇哈哈！！！<br />\n" +
                                 "<h1>这是一个测试页面</h1><br/>"+
-                                "<a href='https://www.baidu.com'>点击前往注册界面</a></p>\n" +
+                                "<a href='http://localhost:8080/ggblog/user/" + ciphertext+"/form?email=" +email+ "'>点击前往注册界面</a></p>\n" +
                         "\t\t\t\t\t\t\t\t\t\t\t\t</div>\n" +
                         "\n" +
                         "\t\t\t\t\t\t\t\t\t\t\t\t<div style=\"margin-bottom:40px;\"><a href=\"https://www.baidu.com\" style=\"display:inline-block;width:139px;height:38px;line-height:38px;color:#fff;font-size:14px;vertical-align:middle;background:url(http://7xi9bi.com1.z0.glb.clouddn.com/35069/2015/07/20/0edb116f982044ba85ecd313f20e881c.jpg);text-decoration:none\">开始注册</a></div>\n" +

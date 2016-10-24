@@ -27,5 +27,10 @@ public class UserDaoTest {
         int insertCount = userDao.insertUser(user,"livid");
         System.out.println("insertCount=  "+insertCount);
     }
+    @Test
+    public void seclectUser() throws Exception {
+        User user =userDao.seclectUser("983214067@qq.com");
+        System.out.println("insertCount=  "+user);
+    }
 
 }

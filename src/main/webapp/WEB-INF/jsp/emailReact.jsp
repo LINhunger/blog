@@ -14,7 +14,7 @@
 <h1>${result.state}</h1>
 <h1>${result.stateInfo}</h1>
 <h1>${result.data}</h1>
-<a href="/ggblog/user/form">没有收到？,再发一次</a>
+<a href="/emailSend.html">没有收到？ 重新验证</a>
 
 
 </body>
